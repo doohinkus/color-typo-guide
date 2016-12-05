@@ -1,4 +1,5 @@
-$cellColor: #efefef;
+$cellColor: #3A828E;
+$backgroundColor: #FFD531;
 $gridCols: 12;
 $gridMaxWidth: 150em;
 $baseWidth: 70%;
@@ -11,4 +12,5 @@ $breakpointMedium: 50em;
   margin-bottom: 1em;
   min-height: 1px;
   background-color: $cellColor;
+  color: #fff;
 }

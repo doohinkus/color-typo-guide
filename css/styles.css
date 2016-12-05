@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
 .container:after,
 .row:after {
   *zoom: 1; }
@@ -14,7 +15,8 @@
   padding: 1em;
   margin-bottom: 1em;
   min-height: 1px;
-  background-color: #efefef; }
+  background-color: #3A828E;
+  color: #fff; }
 
 html,
 body,
@@ -36,6 +38,14 @@ img {
   width: auto;
   max-width: 100%;
   height: auto !important; }
+
+body {
+  font-family: 'Cabin Condensed', sans-serif; }
+
+body {
+  text-align: center;
+  background-color: #FFD531;
+  color: #977800; }
 
 .container {
   width: 70%;
