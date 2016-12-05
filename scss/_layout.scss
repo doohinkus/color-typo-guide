@@ -1,0 +1,16 @@
+.container{
+  width: $baseWidth;
+  max-width: $gridMaxWidth;
+  margin: 0 auto;
+}
+.container:after,
+.row:after{
+  @extend %clearfix;
+}
+[class*='column-']{
+  @extend %columnStyle;
+  width: 100%;
+}
+@include bpMin($breakpointMedium){
+  @include makeCols();
+}

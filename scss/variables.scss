@@ -1,0 +1,14 @@
+$cellColor: #efefef;
+$gridCols: 12;
+$gridMaxWidth: 150em;
+$baseWidth: 70%;
+
+$breakpointSmall: 10em;
+$breakpointMedium: 50em;
+%columnStyle{
+  float: left;
+  padding: 1em;
+  margin-bottom: 1em;
+  min-height: 1px;
+  background-color: $cellColor;
+}

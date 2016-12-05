@@ -1,0 +1,36 @@
+%clearfix{
+  *zoom: 1;
+  &:before,
+  &:after{
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+}
+
+@mixin bpMax ($maxWidth){
+  /*apply rules up the max width, then stop applying them*/
+  @media only screen and (max-width: $maxWidth){
+    @content;
+  }
+}
+@mixin bpMin ($minWidth){
+  /*apply rules up the max width, then stop applying them*/
+  @media only screen and (min-width: $minWidth){
+
+    @content;
+
+  }
+}
+
+@mixin makeCols (){
+  @for $i from 1 to 12{
+    .column-#{$i}{
+      width: (100% / $gridCols) * $i;
+      // @extend .container; not letting me DRY up code here
+
+    }
+  }
+}
