@@ -1,5 +1,3 @@
-
-
 @mixin bpMax ($maxWidth){
   /*apply rules up the max width, then stop applying them*/
   @media only screen and (max-width: $maxWidth){
@@ -12,7 +10,6 @@
     @content;
   }
 }
-
 @mixin makeCols (){
   @for $i from 1 to 12{
     .column-#{$i}{
@@ -21,7 +18,6 @@
     }
   }
 }
-
 @mixin outputColorNames(){
   @each $colorType, $colorValue in $colorNames{
     .color-#{$colorType}:before{
@@ -30,7 +26,6 @@
     }
   }
 }
-
 @mixin outputColors(){
   @each $colorType, $colorValue in $colors{
     .color-#{$colorType} > .color-box{
@@ -40,25 +35,28 @@
   }
 }
 //name color-primary rgb hsl after color name, rgb, hsl
-
 //color-primary > color-primary-mix
 @mixin mixColors(){
+  %floatRight{
+    display: inline-block;
+    float: right;
+  }
   @each $colorTitle, $color in $colors{
     @each $scolorTitle, $scolor in $colors{
-      //add colors
       .color-#{$colorTitle} .color-#{$scolorTitle}-mix{
         background-color: mix($color, $scolor, $mixAmount);
       }
-      //names
       .color-#{$colorTitle} .name:after{
-        content: "#{map-get($colorNames, $colorTitle)}"
+        content: "#{map-get($colorNames, $colorTitle)}";
+        @extend %floatRight;
       }
       .color-#{$colorTitle} .hsl:after{
         content: "#{round(hue($color))}/#{round(saturation($color))}/#{round(lightness($color))}";
-        text-align: right;
+        @extend %floatRight;
       }
       .color-#{$colorTitle} .rgb:after{
         content: "#{$color}";
+        @extend %floatRight;
       }
     }
   }

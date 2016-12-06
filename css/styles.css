@@ -144,6 +144,10 @@ h3 {
   content: "accent";
   background-color: #FF623F; }
 
+.color-primary .name:after, .color-primary .hsl:after, .color-primary .rgb:after, .color-secondary .name:after, .color-secondary .hsl:after, .color-secondary .rgb:after, .color-tertiary .name:after, .color-tertiary .hsl:after, .color-tertiary .rgb:after, .color-accent .name:after, .color-accent .hsl:after, .color-accent .rgb:after {
+  display: inline-block;
+  float: right; }
+
 .color-primary .color-primary-mix {
   background-color: #d8f5e8; }
 
@@ -151,8 +155,7 @@ h3 {
   content: "Mint"; }
 
 .color-primary .hsl:after {
-  content: "153deg/59%/90%";
-  text-align: right; }
+  content: "153deg/59%/90%"; }
 
 .color-primary .rgb:after {
   content: "#D8F5E8"; }
@@ -164,8 +167,7 @@ h3 {
   content: "Mint"; }
 
 .color-primary .hsl:after {
-  content: "153deg/59%/90%";
-  text-align: right; }
+  content: "153deg/59%/90%"; }
 
 .color-primary .rgb:after {
   content: "#D8F5E8"; }
@@ -177,8 +179,7 @@ h3 {
   content: "Mint"; }
 
 .color-primary .hsl:after {
-  content: "153deg/59%/90%";
-  text-align: right; }
+  content: "153deg/59%/90%"; }
 
 .color-primary .rgb:after {
   content: "#D8F5E8"; }
@@ -190,8 +191,7 @@ h3 {
   content: "Mint"; }
 
 .color-primary .hsl:after {
-  content: "153deg/59%/90%";
-  text-align: right; }
+  content: "153deg/59%/90%"; }
 
 .color-primary .rgb:after {
   content: "#D8F5E8"; }
@@ -203,8 +203,7 @@ h3 {
   content: "Teal"; }
 
 .color-secondary .hsl:after {
-  content: "177deg/66%/48%";
-  text-align: right; }
+  content: "177deg/66%/48%"; }
 
 .color-secondary .rgb:after {
   content: "#2ACCC3"; }
@@ -216,8 +215,7 @@ h3 {
   content: "Teal"; }
 
 .color-secondary .hsl:after {
-  content: "177deg/66%/48%";
-  text-align: right; }
+  content: "177deg/66%/48%"; }
 
 .color-secondary .rgb:after {
   content: "#2ACCC3"; }
@@ -229,8 +227,7 @@ h3 {
   content: "Teal"; }
 
 .color-secondary .hsl:after {
-  content: "177deg/66%/48%";
-  text-align: right; }
+  content: "177deg/66%/48%"; }
 
 .color-secondary .rgb:after {
   content: "#2ACCC3"; }
@@ -242,8 +239,7 @@ h3 {
   content: "Teal"; }
 
 .color-secondary .hsl:after {
-  content: "177deg/66%/48%";
-  text-align: right; }
+  content: "177deg/66%/48%"; }
 
 .color-secondary .rgb:after {
   content: "#2ACCC3"; }
@@ -255,8 +251,7 @@ h3 {
   content: "Gold"; }
 
 .color-tertiary .hsl:after {
-  content: "43deg/100%/55%";
-  text-align: right; }
+  content: "43deg/100%/55%"; }
 
 .color-tertiary .rgb:after {
   content: "#FFBC17"; }
@@ -268,8 +263,7 @@ h3 {
   content: "Gold"; }
 
 .color-tertiary .hsl:after {
-  content: "43deg/100%/55%";
-  text-align: right; }
+  content: "43deg/100%/55%"; }
 
 .color-tertiary .rgb:after {
   content: "#FFBC17"; }
@@ -281,8 +275,7 @@ h3 {
   content: "Gold"; }
 
 .color-tertiary .hsl:after {
-  content: "43deg/100%/55%";
-  text-align: right; }
+  content: "43deg/100%/55%"; }
 
 .color-tertiary .rgb:after {
   content: "#FFBC17"; }
@@ -294,8 +287,7 @@ h3 {
   content: "Gold"; }
 
 .color-tertiary .hsl:after {
-  content: "43deg/100%/55%";
-  text-align: right; }
+  content: "43deg/100%/55%"; }
 
 .color-tertiary .rgb:after {
   content: "#FFBC17"; }
@@ -307,8 +299,7 @@ h3 {
   content: "Tomato"; }
 
 .color-accent .hsl:after {
-  content: "11deg/100%/62%";
-  text-align: right; }
+  content: "11deg/100%/62%"; }
 
 .color-accent .rgb:after {
   content: "#FF623F"; }
@@ -320,8 +311,7 @@ h3 {
   content: "Tomato"; }
 
 .color-accent .hsl:after {
-  content: "11deg/100%/62%";
-  text-align: right; }
+  content: "11deg/100%/62%"; }
 
 .color-accent .rgb:after {
   content: "#FF623F"; }
@@ -333,8 +323,7 @@ h3 {
   content: "Tomato"; }
 
 .color-accent .hsl:after {
-  content: "11deg/100%/62%";
-  text-align: right; }
+  content: "11deg/100%/62%"; }
 
 .color-accent .rgb:after {
   content: "#FF623F"; }
@@ -346,8 +335,7 @@ h3 {
   content: "Tomato"; }
 
 .color-accent .hsl:after {
-  content: "11deg/100%/62%";
-  text-align: right; }
+  content: "11deg/100%/62%"; }
 
 .color-accent .rgb:after {
   content: "#FF623F"; }
