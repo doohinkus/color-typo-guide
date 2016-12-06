@@ -61,13 +61,8 @@ h3 {
   width: 35%;
   clear: left; }
 
-span {
-  width: 65%;
-  display: inline-block;
-  float: right; }
-
 .container {
-  width: 70%;
+  width: 80%;
   max-width: 150em;
   margin: 0 auto; }
 
@@ -152,49 +147,209 @@ span {
 .color-primary .color-primary-mix {
   background-color: #d8f5e8; }
 
+.color-primary .name:after {
+  content: "Mint"; }
+
+.color-primary .hsl:after {
+  content: "153deg/59%/90%";
+  text-align: right; }
+
+.color-primary .rgb:after {
+  content: "#D8F5E8"; }
+
 .color-primary .color-secondary-mix {
   background-color: #9be7db; }
+
+.color-primary .name:after {
+  content: "Mint"; }
+
+.color-primary .hsl:after {
+  content: "153deg/59%/90%";
+  text-align: right; }
+
+.color-primary .rgb:after {
+  content: "#D8F5E8"; }
 
 .color-primary .color-tertiary-mix {
   background-color: #e6e19f; }
 
+.color-primary .name:after {
+  content: "Mint"; }
+
+.color-primary .hsl:after {
+  content: "153deg/59%/90%";
+  text-align: right; }
+
+.color-primary .rgb:after {
+  content: "#D8F5E8"; }
+
 .color-primary .color-accent-mix {
   background-color: #e6c2ad; }
+
+.color-primary .name:after {
+  content: "Mint"; }
+
+.color-primary .hsl:after {
+  content: "153deg/59%/90%";
+  text-align: right; }
+
+.color-primary .rgb:after {
+  content: "#D8F5E8"; }
 
 .color-secondary .color-primary-mix {
   background-color: #67dad0; }
 
+.color-secondary .name:after {
+  content: "Teal"; }
+
+.color-secondary .hsl:after {
+  content: "177deg/66%/48%";
+  text-align: right; }
+
+.color-secondary .rgb:after {
+  content: "#2ACCC3"; }
+
 .color-secondary .color-secondary-mix {
   background-color: #2accc3; }
+
+.color-secondary .name:after {
+  content: "Teal"; }
+
+.color-secondary .hsl:after {
+  content: "177deg/66%/48%";
+  text-align: right; }
+
+.color-secondary .rgb:after {
+  content: "#2ACCC3"; }
 
 .color-secondary .color-tertiary-mix {
   background-color: #75c687; }
 
+.color-secondary .name:after {
+  content: "Teal"; }
+
+.color-secondary .hsl:after {
+  content: "177deg/66%/48%";
+  text-align: right; }
+
+.color-secondary .rgb:after {
+  content: "#2ACCC3"; }
+
 .color-secondary .color-accent-mix {
   background-color: #75a795; }
+
+.color-secondary .name:after {
+  content: "Teal"; }
+
+.color-secondary .hsl:after {
+  content: "177deg/66%/48%";
+  text-align: right; }
+
+.color-secondary .rgb:after {
+  content: "#2ACCC3"; }
 
 .color-tertiary .color-primary-mix {
   background-color: #f1d060; }
 
+.color-tertiary .name:after {
+  content: "Gold"; }
+
+.color-tertiary .hsl:after {
+  content: "43deg/100%/55%";
+  text-align: right; }
+
+.color-tertiary .rgb:after {
+  content: "#FFBC17"; }
+
 .color-tertiary .color-secondary-mix {
   background-color: #b4c253; }
+
+.color-tertiary .name:after {
+  content: "Gold"; }
+
+.color-tertiary .hsl:after {
+  content: "43deg/100%/55%";
+  text-align: right; }
+
+.color-tertiary .rgb:after {
+  content: "#FFBC17"; }
 
 .color-tertiary .color-tertiary-mix {
   background-color: #ffbc17; }
 
+.color-tertiary .name:after {
+  content: "Gold"; }
+
+.color-tertiary .hsl:after {
+  content: "43deg/100%/55%";
+  text-align: right; }
+
+.color-tertiary .rgb:after {
+  content: "#FFBC17"; }
+
 .color-tertiary .color-accent-mix {
   background-color: #ff9d25; }
+
+.color-tertiary .name:after {
+  content: "Gold"; }
+
+.color-tertiary .hsl:after {
+  content: "43deg/100%/55%";
+  text-align: right; }
+
+.color-tertiary .rgb:after {
+  content: "#FFBC17"; }
 
 .color-accent .color-primary-mix {
   background-color: #f1957a; }
 
+.color-accent .name:after {
+  content: "Tomato"; }
+
+.color-accent .hsl:after {
+  content: "11deg/100%/62%";
+  text-align: right; }
+
+.color-accent .rgb:after {
+  content: "#FF623F"; }
+
 .color-accent .color-secondary-mix {
   background-color: #b4876d; }
+
+.color-accent .name:after {
+  content: "Tomato"; }
+
+.color-accent .hsl:after {
+  content: "11deg/100%/62%";
+  text-align: right; }
+
+.color-accent .rgb:after {
+  content: "#FF623F"; }
 
 .color-accent .color-tertiary-mix {
   background-color: #ff8231; }
 
+.color-accent .name:after {
+  content: "Tomato"; }
+
+.color-accent .hsl:after {
+  content: "11deg/100%/62%";
+  text-align: right; }
+
+.color-accent .rgb:after {
+  content: "#FF623F"; }
+
 .color-accent .color-accent-mix {
   background-color: #ff623f; }
+
+.color-accent .name:after {
+  content: "Tomato"; }
+
+.color-accent .hsl:after {
+  content: "11deg/100%/62%";
+  text-align: right; }
+
+.color-accent .rgb:after {
+  content: "#FF623F"; }
 
 /*# sourceMappingURL=styles.css.map */

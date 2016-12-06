@@ -39,12 +39,26 @@
     }
   }
 }
+//name color-primary rgb hsl after color name, rgb, hsl
+
 //color-primary > color-primary-mix
 @mixin mixColors(){
   @each $colorTitle, $color in $colors{
     @each $scolorTitle, $scolor in $colors{
+      //add colors
       .color-#{$colorTitle} .color-#{$scolorTitle}-mix{
         background-color: mix($color, $scolor, $mixAmount);
+      }
+      //names
+      .color-#{$colorTitle} .name:after{
+        content: "#{map-get($colorNames, $colorTitle)}"
+      }
+      .color-#{$colorTitle} .hsl:after{
+        content: "#{round(hue($color))}/#{round(saturation($color))}/#{round(lightness($color))}";
+        text-align: right;
+      }
+      .color-#{$colorTitle} .rgb:after{
+        content: "#{$color}";
       }
     }
   }
