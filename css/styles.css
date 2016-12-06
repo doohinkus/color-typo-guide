@@ -1,4 +1,12 @@
+/*colors*/
+/*color names for output*/
 @import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  margin-bottom: 1em;
+  min-height: 1px; }
+
 .container:after,
 .row:after {
   *zoom: 1; }
@@ -10,18 +18,32 @@
   .row:after {
     clear: both; }
 
-[class*='column-'] {
-  float: left;
-  padding: 1em;
-  margin-bottom: 1em;
-  min-height: 1px;
-  background-color: #3A828E;
-  color: #fff; }
+.color-primary:before {
+  content: "primary";
+  display: block;
+  margin-bottom: 10px; }
+
+.color-secondary:before {
+  content: "secondary";
+  display: block;
+  margin-bottom: 10px; }
+
+.color-tertiary:before {
+  content: "tertiary";
+  display: block;
+  margin-bottom: 10px; }
+
+.color-accent:before {
+  content: "accent";
+  display: block;
+  margin-bottom: 10px; }
 
 html,
 body,
 ul,
-ol {
+ol,
+h3,
+span {
   margin: 0;
   padding: 0; }
 
@@ -34,6 +56,11 @@ ol {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+div,
+span,
+h3 {
+  border: 1px dashed black; }
+
 img {
   width: auto;
   max-width: 100%;
@@ -42,10 +69,24 @@ img {
 body {
   font-family: 'Cabin Condensed', sans-serif; }
 
+h3 {
+  font-size: 10pt; }
+
+span {
+  font-size: 9pt; }
+
 body {
-  text-align: center;
-  background-color: #FFD531;
-  color: #977800; }
+  text-align: left; }
+
+h3 {
+  float: left;
+  width: 35%;
+  clear: left; }
+
+span {
+  width: 65%;
+  display: inline-block;
+  float: right; }
 
 .container {
   width: 70%;
@@ -54,6 +95,9 @@ body {
 
 [class*='column-'] {
   width: 100%; }
+
+.color-box {
+  height: 70px; }
 
 /*apply rules up the max width, then stop applying them*/
 @media only screen and (min-width: 50em) {
