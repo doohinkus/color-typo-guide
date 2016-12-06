@@ -17,11 +17,6 @@ span {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-div,
-span,
-h3 {
-  border: 1px dashed black; }
-
 img {
   width: auto;
   max-width: 100%;
@@ -36,8 +31,11 @@ h3 {
 span {
   font-size: 9pt; }
 
-/*colors*/
+/*color vars*/
 /*color names for output*/
+/*Grid vars*/
+/*box height vars*/
+/*breakpoints*/
 [class*='column-'] {
   float: left;
   padding: 1em;
@@ -78,6 +76,12 @@ span {
 
 .color-box {
   height: 70px; }
+
+[class*="-mix"] {
+  height: 30px;
+  margin-bottom: .75em;
+  margin-top: .75em;
+  clear: both; }
 
 /*apply rules up the max width, then stop applying them*/
 @media only screen and (min-width: 50em) {
@@ -144,5 +148,53 @@ span {
 .color-accent > .color-box {
   content: "accent";
   background-color: #FF623F; }
+
+.color-primary .color-primary-mix {
+  background-color: #d8f5e8; }
+
+.color-primary .color-secondary-mix {
+  background-color: #9be7db; }
+
+.color-primary .color-tertiary-mix {
+  background-color: #e6e19f; }
+
+.color-primary .color-accent-mix {
+  background-color: #e6c2ad; }
+
+.color-secondary .color-primary-mix {
+  background-color: #67dad0; }
+
+.color-secondary .color-secondary-mix {
+  background-color: #2accc3; }
+
+.color-secondary .color-tertiary-mix {
+  background-color: #75c687; }
+
+.color-secondary .color-accent-mix {
+  background-color: #75a795; }
+
+.color-tertiary .color-primary-mix {
+  background-color: #f1d060; }
+
+.color-tertiary .color-secondary-mix {
+  background-color: #b4c253; }
+
+.color-tertiary .color-tertiary-mix {
+  background-color: #ffbc17; }
+
+.color-tertiary .color-accent-mix {
+  background-color: #ff9d25; }
+
+.color-accent .color-primary-mix {
+  background-color: #f1957a; }
+
+.color-accent .color-secondary-mix {
+  background-color: #b4876d; }
+
+.color-accent .color-tertiary-mix {
+  background-color: #ff8231; }
+
+.color-accent .color-accent-mix {
+  background-color: #ff623f; }
 
 /*# sourceMappingURL=styles.css.map */

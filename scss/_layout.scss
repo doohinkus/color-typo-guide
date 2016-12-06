@@ -27,6 +27,12 @@ span{
 .color-box{
   height: $colorBoxHeight;
 }
+[class*="-mix"]{
+  height: $colorBoxMixHeight;
+  margin-bottom: .75em;
+  margin-top: .75em;
+  clear: both;
+}
 @include bpMin($breakpointMedium){
   @include makeCols();
 }

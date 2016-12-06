@@ -1,4 +1,6 @@
-/*colors*/
+/*color vars*/
+$mixAmount: 65%;
+
 $colors: (
   primary: #D8F5E8,
   secondary: #2ACCC3,
@@ -14,14 +16,19 @@ $colorNames: (
   accent: "Tomato"
 );
 
-
+/*Grid vars*/
 $gridCols: 12;
 $gridMaxWidth: 150em;
 $baseWidth: 70%;
-$colorBoxHeight: 70px;
 
+/*box height vars*/
+$colorBoxHeight: 70px;
+$colorBoxMixHeight: 30px;
+
+/*breakpoints*/
 $breakpointSmall: 10em;
 $breakpointMedium: 50em;
+
 %columnStyle{
   float: left;
   padding: 1em;

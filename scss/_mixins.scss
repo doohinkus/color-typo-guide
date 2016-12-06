@@ -39,3 +39,13 @@
     }
   }
 }
+//color-primary > color-primary-mix
+@mixin mixColors(){
+  @each $colorTitle, $color in $colors{
+    @each $scolorTitle, $scolor in $colors{
+      .color-#{$colorTitle} .color-#{$scolorTitle}-mix{
+        background-color: mix($color, $scolor, $mixAmount);
+      }
+    }
+  }
+}
