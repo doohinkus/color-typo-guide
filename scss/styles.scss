@@ -1,6 +1,9 @@
-@import "mixins";
-@import "variables";
 @import "reset";
 @import "responsive";
 @import "type";
+@import "mixins";
+@import "variables";
 @import "layout";
+
+@include outputColorNames();
+@include outputColors();

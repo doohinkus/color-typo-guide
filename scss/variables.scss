@@ -1,28 +1,18 @@
 /*colors*/
-$colorPrimary: #D8F5E8;
-$colorSecondary: #2ACCC3;
-$colorTertiary: #FFBC17;
-$colorAccent: #FF623F;
-
 $colors: (
-  primary: $colorPrimary,
-  secondary: $colorPrimary,
-  tertiary: $colorPrimary,
-  accent: $colorPrimary
+  primary: #D8F5E8,
+  secondary: #2ACCC3,
+  tertiary: #FFBC17,
+  accent: #FF623F
 );
+
 /*color names for output*/
-$colorPrimaryName: "Mint";
-$colorSecondaryName: "Teal";
-$colorTertiaryName: "Gold";
-$colorAccentName: "Tomato";
-
 $colorNames: (
-  primary: $colorPrimaryName,
-  secondary: $colorPrimaryName,
-  tertiary: $colorPrimaryName,
-  accent: $colorPrimaryName
+  primary: "Mint",
+  secondary: "Teal",
+  tertiary: "Gold",
+  accent: "Tomato"
 );
-
 
 
 $gridCols: 12;
@@ -49,5 +39,3 @@ $breakpointMedium: 50em;
     clear:both;
   }
 }
-
-@include outputColorNames ();

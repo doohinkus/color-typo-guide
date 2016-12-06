@@ -1,43 +1,4 @@
-/*colors*/
-/*color names for output*/
 @import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
-[class*='column-'] {
-  float: left;
-  padding: 1em;
-  margin-bottom: 1em;
-  min-height: 1px; }
-
-.container:after,
-.row:after {
-  *zoom: 1; }
-  .container:after,
-  .row:after {
-    content: "";
-    display: table; }
-  .container:after,
-  .row:after {
-    clear: both; }
-
-.color-primary:before {
-  content: "primary";
-  display: block;
-  margin-bottom: 10px; }
-
-.color-secondary:before {
-  content: "secondary";
-  display: block;
-  margin-bottom: 10px; }
-
-.color-tertiary:before {
-  content: "tertiary";
-  display: block;
-  margin-bottom: 10px; }
-
-.color-accent:before {
-  content: "accent";
-  display: block;
-  margin-bottom: 10px; }
-
 html,
 body,
 ul,
@@ -74,6 +35,25 @@ h3 {
 
 span {
   font-size: 9pt; }
+
+/*colors*/
+/*color names for output*/
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  margin-bottom: 1em;
+  min-height: 1px; }
+
+.container:after,
+.row:after {
+  *zoom: 1; }
+  .container:after,
+  .row:after {
+    content: "";
+    display: table; }
+  .container:after,
+  .row:after {
+    clear: both; }
 
 body {
   text-align: left; }
@@ -133,5 +113,36 @@ span {
 
   .column-11 {
     width: 91.66667%; } }
+.color-primary:before {
+  content: "primary";
+  text-transform: capitalize; }
+
+.color-secondary:before {
+  content: "secondary";
+  text-transform: capitalize; }
+
+.color-tertiary:before {
+  content: "tertiary";
+  text-transform: capitalize; }
+
+.color-accent:before {
+  content: "accent";
+  text-transform: capitalize; }
+
+.color-primary > .color-box {
+  content: "primary";
+  background-color: #D8F5E8; }
+
+.color-secondary > .color-box {
+  content: "secondary";
+  background-color: #2ACCC3; }
+
+.color-tertiary > .color-box {
+  content: "tertiary";
+  background-color: #FFBC17; }
+
+.color-accent > .color-box {
+  content: "accent";
+  background-color: #FF623F; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -26,8 +26,16 @@
   @each $colorType, $colorValue in $colorNames{
     .color-#{$colorType}:before{
       content: "#{$colorType}";
-      display: block;
-      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@mixin outputColors(){
+  @each $colorType, $colorValue in $colors{
+    .color-#{$colorType} > .color-box{
+      content: "#{$colorType}";
+      background-color: $colorValue;
     }
   }
 }
