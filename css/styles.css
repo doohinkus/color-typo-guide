@@ -69,6 +69,9 @@ h3 {
 [class*='column-'] {
   width: 100%; }
 
+.left {
+  float: left; }
+
 .color-box {
   height: 70px; }
 
@@ -112,35 +115,35 @@ h3 {
 
   .column-11 {
     width: 91.66667%; } }
-.color-primary:before {
+.top-colors .row .color-primary:before {
   content: "primary";
   text-transform: capitalize; }
 
-.color-secondary:before {
+.top-colors .row .color-secondary:before {
   content: "secondary";
   text-transform: capitalize; }
 
-.color-tertiary:before {
+.top-colors .row .color-tertiary:before {
   content: "tertiary";
   text-transform: capitalize; }
 
-.color-accent:before {
+.top-colors .row .color-accent:before {
   content: "accent";
   text-transform: capitalize; }
 
-.color-primary > .color-box {
+.top-colors .color-primary > .color-box {
   content: "primary";
   background-color: #D8F5E8; }
 
-.color-secondary > .color-box {
+.top-colors .color-secondary > .color-box {
   content: "secondary";
   background-color: #2ACCC3; }
 
-.color-tertiary > .color-box {
+.top-colors .color-tertiary > .color-box {
   content: "tertiary";
   background-color: #FFBC17; }
 
-.color-accent > .color-box {
+.top-colors .color-accent > .color-box {
   content: "accent";
   background-color: #FF623F; }
 
@@ -339,5 +342,65 @@ h3 {
 
 .color-accent .rgb:after {
   content: "#FF623F"; }
+
+.color-primary .color-primary {
+  background-color: #D8F5E8;
+  float: left;
+  width: 30%; }
+
+.color-primary .color-primary-light {
+  background-color: #ecfaf4;
+  float: left;
+  width: 30%; }
+
+.color-primary .color-primary-dark {
+  background-color: #c4f0dc;
+  float: left;
+  width: 30%; }
+
+.color-secondary .color-secondary {
+  background-color: #2ACCC3;
+  float: left;
+  width: 30%; }
+
+.color-secondary .color-secondary-light {
+  background-color: #39d6ce;
+  float: left;
+  width: 30%; }
+
+.color-secondary .color-secondary-dark {
+  background-color: #26b7af;
+  float: left;
+  width: 30%; }
+
+.color-tertiary .color-tertiary {
+  background-color: #FFBC17;
+  float: left;
+  width: 30%; }
+
+.color-tertiary .color-tertiary-light {
+  background-color: #ffc331;
+  float: left;
+  width: 30%; }
+
+.color-tertiary .color-tertiary-dark {
+  background-color: #fdb400;
+  float: left;
+  width: 30%; }
+
+.color-accent .color-accent {
+  background-color: #FF623F;
+  float: left;
+  width: 30%; }
+
+.color-accent .color-accent-light {
+  background-color: #ff7759;
+  float: left;
+  width: 30%; }
+
+.color-accent .color-accent-dark {
+  background-color: #ff4d26;
+  float: left;
+  width: 30%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -19,6 +19,9 @@ h3{
   @extend %columnStyle;
   width: 100%;
 }
+.left{
+  float: left;
+}
 .color-box{
   height: $colorBoxHeight;
 }

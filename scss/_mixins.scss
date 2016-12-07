@@ -20,7 +20,7 @@
 }
 @mixin outputColorNames(){
   @each $colorType, $colorValue in $colorNames{
-    .color-#{$colorType}:before{
+    .top-colors .row .color-#{$colorType}:before{
       content: "#{$colorType}";
       text-transform: capitalize;
     }
@@ -28,12 +28,15 @@
 }
 @mixin outputColors(){
   @each $colorType, $colorValue in $colors{
-    .color-#{$colorType} > .color-box{
+    .top-colors .color-#{$colorType} > .color-box{
       content: "#{$colorType}";
       background-color: $colorValue;
     }
   }
 }
+
+// .color-primary .color-primary
+
 //name color-primary rgb hsl after color name, rgb, hsl
 //color-primary > color-primary-mix
 @mixin mixColors(){
@@ -61,3 +64,31 @@
     }
   }
 }
+
+@mixin tintColors(){
+  @each $ct, $cl in $colors{
+    .color-#{$ct} .color-#{$ct}{
+      background-color: $cl;
+      float: left;
+      width: 30%;
+    }
+    .color-#{$ct} .color-#{$ct}-light{
+      background-color: lighten($cl, $tintAmount);
+      float: left;
+      width: 30%;
+
+    }
+    .color-#{$ct} .color-#{$ct}-dark{
+      background-color: darken($cl, $tintAmount);
+      float: left;
+      width: 30%;
+
+    }
+
+  }
+}
+// @each $colorTitle, $color in $colors{
+//   .color-#{$colorTitle} .color-#{$colorTitle}{
+//     background-color: $color;
+//   }
+// }
